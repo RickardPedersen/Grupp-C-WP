@@ -23,3 +23,5 @@ Bygga en mäklarsite i WP.
 - [ ] På förstasidan ska det finnas en sökfunktion och användaren ska kunna söka efter ort, etiketter (typ "nära naturen"), antal rum (max/min) och pris (max/min).
 - [ ] Det ska finnas en Om oss-sida som berättar lite om företaget.
     - [ ] Sidan ska inkludera ett kontaktformulär. Kontaktformuläret ska spara alla inskick i en databas.
+
+TEST

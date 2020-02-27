@@ -24,4 +24,4 @@ Bygga en mäklarsite i WP.
 - [ ] Det ska finnas en Om oss-sida som berättar lite om företaget.
     - [ ] Sidan ska inkludera ett kontaktformulär. Kontaktformuläret ska spara alla inskick i en databas.
 
-TEST
+Nytt test

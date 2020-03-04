@@ -13,9 +13,8 @@
 #sidebar-2 {
     float: right;
     padding: 5% 0 3%;
-    margin-right: 0px;
-    margin-left: 80px;
-    width: 300px;
+    margin-right: 45px;
+    max-width: 20.33333%
 }
 
 .sidebar-none #sidebar-2 {
@@ -23,6 +22,31 @@
 }
 
 #content {
+    display:flex;
+    flex-direction:row;
     width: 528px;
 }
 
+
+@media screen and (max-width: 980px) {
+	#sidebar-2 {
+		margin-right: 3%;
+		max-width: 14%;
+	}
+	.sidebar1 #content {
+		max-width: 54% !important;
+	}
+}
+
+@media screen and (max-width: 760px) {
+	#sidebar-2 {
+		margin: 0;
+		width: 100%;
+		max-width: 100%;
+		float: none;
+		clear: both;
+	}
+	.sidebar1 #content {
+		max-width: 100% !important;
+	}
+}

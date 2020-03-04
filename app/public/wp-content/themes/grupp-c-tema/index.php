@@ -32,6 +32,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<!-- Do the left sidebar check and opens the primary div -->
 			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
+			<aside id="sidebar-2">
+	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar-2') ) ?>
+</aside>
 
 			<main class="site-main" id="main">
 
@@ -71,9 +74,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	</div><!-- #content -->
 	
-<aside id="sidebar-2">
-	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar-2') ) ?>
-</aside>
+
 
 </div><!-- #index-wrapper -->
 

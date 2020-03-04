@@ -10,14 +10,15 @@
  Text Domain:  gruppctema
 */
 
-#sidebar-estate {
-    float: left;
+#sidebar-2 {
+    float: right;
     padding: 5% 0 3%;
-	margin-right: 30px;
-    width: 138px;
+    margin-right: 0px;
+    margin-left: 80px;
+    width: 300px;
 }
 
-.sidebar-none #sidebar-estate {
+.sidebar-none #sidebar-2 {
 	display: none;
 }
 

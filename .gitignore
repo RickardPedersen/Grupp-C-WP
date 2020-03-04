@@ -60,4 +60,3 @@ $RECYCLE.BIN/
 # WordPress
 logs/
 app/public/wp-config.php
-app/public/wp-content/plugins/query-monitor

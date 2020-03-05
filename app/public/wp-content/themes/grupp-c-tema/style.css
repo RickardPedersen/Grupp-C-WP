@@ -13,8 +13,9 @@
 #sidebar-2 {
     float: right;
     padding: 5% 0 3%;
-    margin-right: 45px;
-    max-width: 20.33333%
+	margin-right: 100px;
+	margin-top:10px;
+    max-width: 30.33333%
 }
 
 .sidebar-none #sidebar-2 {
@@ -23,8 +24,8 @@
 
 #content {
     display:flex;
-    flex-direction:row;
-    width: 528px;
+	flex-direction:row;
+	width: 780px;
 }
 
 
@@ -49,4 +50,12 @@
 	.sidebar1 #content {
 		max-width: 100% !important;
 	}
+}
+
+.bg-style{
+	background-image: cover;
+}
+
+#sidebar-2{
+	width: 28%;
 }

@@ -22,7 +22,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 <?php if ( 'both' === $sidebar_pos ) : ?>
 	<div class="col-md-3 widget-area" id="sidebar-2" role="complementary">
 <?php else : ?>
-	<div class="col-md-4 widget-area" id="sidebar-2" role="complementary">
+	<div class="col-md-4 widget-area shadow p-5" id="sidebar-2" role="complementary">
 <?php endif; ?>
 <?php dynamic_sidebar( 'sidebar-2' ); ?>
 

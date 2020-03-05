@@ -27,10 +27,10 @@ defined( 'ABSPATH' ) || exit;
 
 	<div class="entry-content">
 
-	<?php include "gallery.php";?>
+	
 
 		<?php the_content(); ?>
-
+<?php include "gallery.php"; ?>
 		<?php
 		wp_link_pages(
 			array(

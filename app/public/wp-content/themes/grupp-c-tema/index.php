@@ -26,8 +26,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="wrapper" id="index-wrapper">
 <?php get_sidebar('estate-bar'); ?>
 
-
-
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" class="d-flex" tabindex="-1">
 
 		<div class="row">

@@ -36,3 +36,15 @@ function child_register_sidebar(){
 		'after_title' => '</h4>',
 	));
 }
+
+function meks_which_template_is_loaded() {
+	if ( is_super_admin() ) {
+		global $template;
+		print_r( $template );
+	}
+}
+
+add_theme_support( 'post-thumbnails' );
+ 
+add_action( 'wp_footer', 'meks_which_template_is_loaded' );
+

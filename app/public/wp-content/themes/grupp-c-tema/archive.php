@@ -58,6 +58,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					array(
 						'posts_per_page' => 5,
 						'post_type'      => 'sales_object',
+						'cat' => get_query_var( 'cat' ),
 						'paged' => $paged,
 					)
 				);
@@ -91,7 +92,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<!-- The pagination component -->
 
 			<?php
-			wp_reset_postdata();
 			understrap_pagination();
 			?>
 

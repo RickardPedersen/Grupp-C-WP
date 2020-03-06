@@ -29,24 +29,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" class="d-flex" tabindex="-1">
 
 		<div class="row">
-			<?php
-			/*
-			$wp_query = new WP_Query(
-				array(
-					'posts_per_page' => 5,
-					'post_type'      => 'sales-objects',
-				)
-			);
-
-			while ( $wp_query->have_posts() ) {
-				$wp_query->the_post();
-				?>
-				<li><?php the_title(); ?></li>
-				<?php
-			}
-			*/
-			?>
-
 			<!-- Do the left sidebar check and opens the primary div -->
 			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
 
@@ -58,8 +40,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 					array(
 						'posts_per_page' => 5,
 						'post_type'      => 'sales_object',
-						'cat' => get_query_var( 'cat' ),
-						'paged' => $paged,
+						'cat'            => get_query_var( 'cat' ),
+						'paged'          => $paged,
 					)
 				);
 

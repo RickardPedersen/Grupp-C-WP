@@ -29,6 +29,19 @@ defined( 'ABSPATH' ) || exit;
 
 	<!-- Våra custom fields START -->
 	<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+	<div id="estate-facts">
+	<div class="d-flex flex-column border border-solid p-2">
+	<div><h5>Fakta om bostaden</h5></div>
+	<div class="row">
+	<div class="m-2 ml-3">Adress: <?php echo get_post_meta( $post->ID, 'Adress', true ); ?></div>
+	<div class="m-2 ml-3">Visningsdatum: <?php echo get_post_meta( $post->ID, 'Visningsdatum', true ); ?></div>
+	</div>
+	<div class="row">
+	<div class="m-2 ml-3">Boarea: <?php echo get_post_meta( $post->ID, 'boarea', true ); ?></div>
+	<div class="m-2 ml-3">Utgångspris: <?php echo get_post_meta( $post->ID, 'Utgångsbud', true ); ?></div>
+	</div>
+	</div>
+	</div>
 	<p><?php echo get_post_meta( $post->ID, 'Adress', true ); ?> </p>
 	<p><?php echo get_post_meta( $post->ID, 'fritext1', true ); ?> </p>
 	<?php include "gallery.php"; ?><br>

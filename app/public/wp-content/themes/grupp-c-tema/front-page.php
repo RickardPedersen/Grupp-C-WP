@@ -60,7 +60,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<div class="objects-summary__thumbnail pl-2 pr-2 pt-2"><?php the_post_thumbnail(); ?></div><br>
 							<div class="row pl-4">
 								<button class="ml-3 btn btn-dark  m-1"><?php echo get_post_meta( $post->ID, 'antal_rum', true ); ?> Rum & kök</button>
-								<button class="ml-1 btn btn-dark  m-1"><?php echo get_post_meta( $post->ID, 'boarea', true ); ?> Kvm</button>
+								<button class="ml-1 btn btn-dark  m-1"><?php echo get_post_meta( $post->ID, 'boarea', true ); ?> m²</button>
 								<button class="ml-1 btn btn-dark  m-1"><?php echo number_format( $utg_bud, 0, null, ' ' ); ?> kr</button>
 							</div>
 							<h5 class="event-summary__title headline headline--tiny pl-4 mt-4"><a href="<?php the_permalink(); ?>">

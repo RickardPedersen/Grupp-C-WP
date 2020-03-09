@@ -48,7 +48,7 @@ function child_register_sidebar() {
 function meks_which_template_is_loaded() {
 	if ( is_super_admin() ) {
 		global $template;
-		print_r( $template );
+		//print_r( $template );
 	}
 }
 

@@ -97,3 +97,4 @@ for ($i = 0; $i < count($bildArray); $i++) {
 
 </div>
 </div>
+</div>

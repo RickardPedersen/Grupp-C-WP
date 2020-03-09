@@ -13,7 +13,7 @@ defined( 'ABSPATH' ) || exit;
 
 	<header class="entry-header">
 
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		
 
 		<div class="entry-meta">
 
@@ -27,8 +27,21 @@ defined( 'ABSPATH' ) || exit;
 
 	<div class="entry-content">
 
-	<?php include "gallery.php"; ?>
+	<!-- Våra custom fields START -->
+	<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+	<p><?php echo get_post_meta( $post->ID, 'Adress', true ); ?> </p>
+	<p><?php echo get_post_meta( $post->ID, 'fritext1', true ); ?> </p>
+	<?php include "gallery.php"; ?><br>
+	<p><?php echo get_post_meta( $post->ID, 'fritext2', true ); ?> </p>
+	<br>
+	<div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=<?php echo get_post_meta( $post->ID, 'Adress', true ); ?>&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/elementor-review/">go to elementor pro</a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
+	<br>
+	<h2>Föreningsinformation</h2>
+	<p><?php echo get_post_meta( $post->ID, 'fritext3', true ); ?> </p>
 
+
+		
+	<!-- Våra custom fields SLUT -->
 		<?php the_content(); ?>
 
 		<?php

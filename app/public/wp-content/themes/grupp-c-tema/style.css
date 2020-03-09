@@ -90,3 +90,18 @@ background-color: white;
 	outline:none
 	
 }
+
+
+li {
+	list-style:none;
+}
+
+.post-categories a {
+	color: black;
+	text-decoration:none;
+}
+
+.post-categories a:hover{
+	text-decoration:none;
+	color: black;
+} 

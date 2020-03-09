@@ -85,7 +85,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 										<button class="btn btn-dark"><?php echo esc_html( get_post_meta( $post->ID, 'antal_rum', true ) ); ?> Rum & kök</button>
 										<button class="btn btn-dark"><?php echo esc_html( get_post_meta( $post->ID, 'boarea', true ) ); ?> m²</button>
 										<button class="btn btn-dark"><?php echo number_format( $utg_bud, 0, null, ' ' ); ?> kr</button>
-										<p class="card-text"><?php  echo wp_trim_words( get_post_meta( $post->ID, 'fritext1', true ), 15 );; ?> <a class="text-primary" href="<?php the_permalink(); ?>" class="text-light">Läs mer</a></p>
+										<p class="card-text"><?php echo wp_trim_words( get_post_meta( $post->ID, 'fritext1', true ), 15 ); ?> <a class="text-primary" href="<?php the_permalink(); ?>" class="text-light">Läs mer</a></p>
 									</div>
 								</div>
 							</div>

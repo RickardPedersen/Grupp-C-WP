@@ -72,3 +72,21 @@ img{
 .gmap_canvas{
 	margin: auto;
 }
+
+
+.singleThumb {
+
+}
+
+
+.thumBtn {
+border: 0px solid transparent;
+text-shadow: 0px 0px 0px transparent;
+background-color: white;
+}
+
+.thumBtn:focus {
+	background-color: black;
+	outline:none
+	
+}

@@ -65,7 +65,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							</div>
 							<h5 class="event-summary__title headline headline--tiny pl-4 mt-4"><a href="<?php the_permalink(); ?>">
 									<?php the_title(); ?></a></h5>
-							<p class=" pl-4 pb-4 pr-4"><?php echo wp_trim_words( get_the_content(), 35 ); ?> <a class="text-primary" href="<?php the_permalink(); ?>" class="text-light">Läs mer</a></p>
+							<p class=" pl-4 pb-4 pr-4"><?php echo wp_trim_words( get_post_meta( $post->ID, 'fritext1', true ), 35 ); ?> <a class="text-primary" href="<?php the_permalink(); ?>" class="text-light">Läs mer</a></p>
 						</div>
 					</div>
 

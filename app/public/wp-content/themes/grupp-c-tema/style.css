@@ -61,5 +61,14 @@
 }
 
 .carouselContainer{
-	width: 640px;
+	width: 100%;
+	/*width: 640px;*/
+}
+
+img{
+	width:100%;
+}
+
+.gmap_canvas{
+	margin: auto;
 }

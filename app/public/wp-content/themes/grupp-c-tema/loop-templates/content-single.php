@@ -36,9 +36,14 @@ defined( 'ABSPATH' ) || exit;
 	<div class="m-1 ml-3"><?php echo the_category();?></div>
 	</div>
 	<div class="row">
+	<?php $utg_bud = get_post_meta( $post->ID, 'Utgångsbud', true ); ?>
 	<div class="m-1 ml-3">Boarea: <?php echo get_post_meta( $post->ID, 'boarea', true ); ?> m²</div>
-	<div class="m-1 ml-3">Utgångspris: <?php echo get_post_meta( $post->ID, 'Utgångsbud', true );?> kr</div>
-	<div class="m-1 ml-3">Visningsdatum: <?php echo get_post_meta( $post->ID, 'Visningsdatum', true ); ?></div>
+	<div class="m-1 ml-3">Utgångspris: <?php echo number_format( $utg_bud, 0, null, ' ' );?> kr</div>
+	<?php 	
+	$date = get_post_meta( $post->ID, 'Visningsdatum', true );
+	$date = strtotime( $date );
+	?>
+	<div class="m-1 ml-3">Visningsdatum: <?php echo date( 'd/m/Y', $date ); ?></div>
 
 	</div>
 

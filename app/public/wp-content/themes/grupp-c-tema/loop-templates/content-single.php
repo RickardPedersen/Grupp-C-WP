@@ -23,12 +23,11 @@ defined( 'ABSPATH' ) || exit;
 
 	</header><!-- .entry-header -->
 
-	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
-
 	<div class="entry-content">
 
 	<!-- Våra custom fields START -->
 	<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+	<?php include "gallery.php"; ?><br>
 	<div id="estate-facts">
 	<div class="d-flex flex-column border border-solid p-2">
 	<div><h5>Fakta om bostaden</h5></div>
@@ -44,7 +43,6 @@ defined( 'ABSPATH' ) || exit;
 	</div>
 	<p><?php echo get_post_meta( $post->ID, 'Adress', true ); ?> </p>
 	<p><?php echo get_post_meta( $post->ID, 'fritext1', true ); ?> </p>
-	<?php include "gallery.php"; ?><br>
 	<p><?php echo get_post_meta( $post->ID, 'fritext2', true ); ?> </p>
 	<br>
 	<div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=<?php echo get_post_meta( $post->ID, 'Adress', true ); ?>&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/elementor-review/">go to elementor pro</a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>

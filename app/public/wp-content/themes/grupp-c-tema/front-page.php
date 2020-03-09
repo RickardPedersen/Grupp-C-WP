@@ -57,7 +57,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<span class="objects-summary__day"><span>
 						</a>
 						<div class="objects-summary__content shadow m-2" style="background-image:url('<?php get_the_post_thumbnail_url( $wp_query ); ?>')">
-							<div class="objects-summary__thumbnail pl-2 pr-2 pt-2"><?php the_post_thumbnail(); ?></div><br>
+						<a href="<?php the_permalink(); ?>"><div class="objects-summary__thumbnail pl-2 pr-2 pt-2"><?php the_post_thumbnail(); ?></div></a><br>
 							<div class="row pl-4">
 								<button class="ml-3 btn btn-dark  m-1"><?php echo get_post_meta( $post->ID, 'antal_rum', true ); ?> Rum & kök</button>
 								<button class="ml-1 btn btn-dark  m-1"><?php echo get_post_meta( $post->ID, 'boarea', true ); ?> m²</button>

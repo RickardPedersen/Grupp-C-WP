@@ -79,7 +79,7 @@ for ($i = 0; $i < count($bildArray); $i++) {
   </a>
 </div>
 <br>
-<div class="container">
+<div class="container m-0 ">
 <div class="row">
 
 <?php for ($i = 0; $i < count($bildArray); $i++) {

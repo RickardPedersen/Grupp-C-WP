@@ -63,13 +63,13 @@ class Grupp_C_Search extends WP_Widget {
 						<option value="7">7</option>
 						<option value="8">8</option>
 						<option value="9">9</option>
-						<option value="10">10+</option>
+						<option value="10">10</option>
 					</select>
 				</label>
 				<label>
 					Max:
 					<select name="maxRoom" id="maxRoom">
-						<option value="10">Alla</option>
+						<option value="">Alla</option>
 						<option value="1">1</option>
 						<option value="2">2</option>
 						<option value="3">3</option>
@@ -79,7 +79,7 @@ class Grupp_C_Search extends WP_Widget {
 						<option value="7">7</option>
 						<option value="8">8</option>
 						<option value="9">9</option>
-						<option value="10">10+</option>
+						<option value="10">10</option>
 					</select>
 				</label>
 			</div>
@@ -117,7 +117,7 @@ class Grupp_C_Search extends WP_Widget {
 				<label>
 					Max:
 					<select name="maxCost" id="maxCost">
-						<option value="none">Inget</option>
+						<option value="">Inget</option>
 						<option value="100000">100 000 kr</option>
 						<option value="200000">200 000 kr</option>
 						<option value="300000">300 000 kr</option>

@@ -55,14 +55,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 							 * If you want to overload this in a child theme then include a file
 							 * called content-search.php and that will be used instead.
 							 */
-							if ( $max_rooms == 10 && $post_rooms >= $min_rooms ) {
-								if ( $max_cost == 'none' && $post_cost >= $min_cost ) {
+							if ( $max_rooms == '' && $post_rooms >= $min_rooms ) {
+								if ( $max_cost == '' && $post_cost >= $min_cost ) {
 									get_template_part( 'loop-templates/content', 'search' );
 								} elseif ( $post_cost >= $min_cost && $post_cost <= $max_cost ) {
 									get_template_part( 'loop-templates/content', 'search' );
 								}
 							} elseif ( $post_rooms >= $min_rooms && $post_rooms <= $max_rooms ) {
-								if ( $max_cost == 'none' && $post_cost >= $min_cost ) {
+								if ( $max_cost == '' && $post_cost >= $min_cost ) {
 									get_template_part( 'loop-templates/content', 'search' );
 								} elseif ( $post_cost >= $min_cost && $post_cost <= $max_cost ) {
 									get_template_part( 'loop-templates/content', 'search' );
